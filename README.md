@@ -1,1 +1,3 @@
 # Image_classifier
+
+This project utilizes Python, TensorFlow, and Keras to create a clothing image classifier. A machine learning model was trained using data from a database provided by a clothing company. The objective was to classify different types of clothing items, such as shirts, sweaters, pants, and boots. The model is based on a convolutional neural network (CNN), and its performance was evaluated using metrics such as accuracy and loss. In future updates, an interface will be added to allow users to upload images and obtain predictions from the model. This project is valuable for automating the classification and labeling of clothing items in a clothing company's catalog.
