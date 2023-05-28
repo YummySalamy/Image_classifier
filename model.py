@@ -11,7 +11,6 @@ nombres_clases = metadatos.features['label'].names
 
 nombres_clases
 
-#normalizing from  [0-255] to [0-1]
 def normalizar(imagenes, etiquetas):
   imagenes = tf.cast(imagenes, tf.float32)
   imagenes /= 255 #From [0-255] to [0-1]
@@ -140,7 +139,3 @@ prediccion = modelo.predict(imagen)
 
 print("Prediccion: " + nombres_clases[np.argmax(prediccion[0])])
 
-#Exportar a Tensorflow.js
-modelo.save('modelo_exportado.h5')
-
-!pip install tensorflowjs
